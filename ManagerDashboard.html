@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Goal Mitr - Manager Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9a406",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#231c0f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-4">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">Goal Mitr</h1>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="/ManagerDashboard.html">Dashboard</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="/ProjectInsight.html">Projects</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="/StrategicResourceAllocation.html">Strategic Resource Allocation</a>
+</nav>
+<div class="flex items-center">
+<div onclick="location.href='/ManagerProfile.html'" class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmY-HoJLu4xMRihtb0CZIcS3Y76Uneubl0mqgX03QVLgIbmqGssCA5pTsz9Dltf_TqlunEWXmp-711_pkTW4hQKIMjTBT_DPmNkY85nwSq82qMM-kUbiJyNd1mXjZQBE31uy5yqV3GnhI43WsMctGnbhUzuN7jnKPDf4ny6JTAJL4zdb2s05MnVMjlOGLwaVAkC0Dvn6hwJVt1LsaVBVvVnNQ8ra1glUCLqoQIxQpsuDQBleRErt49ZqDDxcsEUb70ZXi8jFhir0g");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-6 py-8">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-8">
+<h2 class="text-3xl font-bold text-background-dark dark:text-background-light">Team Overview</h2>
+<button class="mt-4 md:mt-0 flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-background-dark font-semibold text-sm hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined text-base">auto_awesome</span>
+                    Generate Report
+                </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+<div class="bg-background-light dark:bg-background-dark/50 p-4 rounded-xl border border-background-dark/10 dark:border-background-light/10 flex flex-col items-center text-center">
+<div class="relative">
+<img alt="Ethan Carter" class="w-24 h-24 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVNJ8pU4gIMzb4kwmI90O3kGVBMaVQ3SUeFcJUk5psbli1K4yKiNtkMHKa9mO8AzLKK6J4CrjHWD62-hQTsxpwl2TSXpLIKLzmvd-fWlca139zWmg52cuDESDZRZHmBIueJU742HyFUSN1PKjd4ILM7SzTggiWIDo-JlHPOZVfRVVsAMpb7vLg_wis303wmTsy9PSlc75XGH0Jtb-8xqIWl4llf_2y6LU2IcYlHHLSD60eBHYkBmXsQpTryvM9dUBaeLQsdLTm_q8"/>
+</div>
+<h3 class="mt-4 text-base font-semibold text-background-dark dark:text-background-light">Ethan Carter</h3>
+<div class="w-full bg-background-dark/10 dark:bg-background-light/10 rounded-full h-1.5 my-2">
+<div class="bg-primary h-1.5 rounded-full" style="width: 75%"></div>
+</div>
+<p class="text-xs text-background-dark/60 dark:text-background-light/60">Progress: 75%</p>
+<a class="mt-3 text-xs font-medium text-primary hover:underline" href="#">View Profile</a>
+</div>
+<div class="bg-background-light dark:bg-background-dark/50 p-4 rounded-xl border border-background-dark/10 dark:border-background-light/10 flex flex-col items-center text-center">
+<div class="relative">
+<img alt="Olivia Bennett" class="w-24 h-24 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrGgIeZdn9P2VI4it9J8rsJg9Hkt9wv3eWVKVr3iLya3aClX2_jGun9r0_sb98FQrt3Ri4WQgGSvYRIdoVqblGWnuuzzMGmej7vBht2NHnNbgAn7jU5mWyswtu5gj0KTDMfGc_sei20FitClJwJgqmRNd9MhMYUFQ6QmUhmNzcao_6V47ZNurxj_vM_322JxfOuDEXKeg7trvQ2UIxRPwbsMuPW9VSwTKQKtOCuRNu2Vl1N58O6CqyXEnYMGzUBJLfOAycofAP9kU"/>
+<span class="absolute -top-1 -right-1 flex h-6 w-6">
+<span class="relative inline-flex rounded-full h-6 w-6 bg-primary/20 items-center justify-center">
+<span class="material-symbols-outlined text-primary text-base" title="Burnout Risk Detected">local_fire_department</span>
+</span>
+</span>
+</div>
+<h3 class="mt-4 text-base font-semibold text-background-dark dark:text-background-light">Olivia Bennett</h3>
+<div class="w-full bg-background-dark/10 dark:bg-background-light/10 rounded-full h-1.5 my-2">
+<div class="bg-primary h-1.5 rounded-full" style="width: 90%"></div>
+</div>
+<p class="text-xs text-background-dark/60 dark:text-background-light/60">Progress: 90%</p>
+<a class="mt-3 text-xs font-medium text-primary hover:underline" href="#">View Profile</a>
+</div>
+<div class="bg-background-light dark:bg-background-dark/50 p-4 rounded-xl border border-background-dark/10 dark:border-background-light/10 flex flex-col items-center text-center">
+<div class="relative">
+<img alt="Noah Thompson" class="w-24 h-24 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr1kZwLlbSHXGEVNYtnFn-nswLFS3XSADnxVlZ-Fbo30VIkwP1PK7h_BSSTV5Nb5gB9hd4HVKQHfzKB3hZd5FiJIWQWwDMCks6e-VXK3top0h5tEgnICLYO3fm5-CrPX8LWZ5tZsfhAFwCeB2R8oXqlNHaTwbcNVIU73fhX_aMH_d5GxUh4_25mkwZzlhtrkjOCFiOS4fm6fFlL5BEUbVa_timbsazLBK3VuplfdL823ombONhSxfAm0UuONiUS6rbhHyMK_sv29E"/>
+</div>
+<h3 class="mt-4 text-base font-semibold text-background-dark dark:text-background-light">Noah Thompson</h3>
+<div class="w-full bg-background-dark/10 dark:bg-background-light/10 rounded-full h-1.5 my-2">
+<div class="bg-primary h-1.5 rounded-full" style="width: 50%"></div>
+</div>
+<p class="text-xs text-background-dark/60 dark:text-background-light/60">Progress: 50%</p>
+<a class="mt-3 text-xs font-medium text-primary hover:underline" href="#">View Profile</a>
+</div>
+<div class="bg-background-light dark:bg-background-dark/50 p-4 rounded-xl border border-background-dark/10 dark:border-background-light/10 flex flex-col items-center text-center">
+<div class="relative">
+<img alt="Ava Harper" class="w-24 h-24 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg3WGa9BjzlGqGW1Jgdr_uqP3gZcIVsOpMztikjfgHGKzpjawPtEXs-wGnDPNFXlW2uHy7i09KfVYKfTIJ0rgLUY0pEGFTmGZUO8fdIWzpryWVTVREq5d19BXN1dyZPttI8DbRIs8Ejs2MytavwCkuqG6aspQ2q6JkuOh29rcQ-h2A31ZoQ8SzU6klG9ZQb6CQbASuSQkD0Lwe198ZVrqkdA2hcC_RlrzllxrEEBoacaUdVe9fQ5M3zvBDMSpE6cviq2aWEOcuHJE"/>
+</div>
+<h3 class="mt-4 text-base font-semibold text-background-dark dark:text-background-light">Ava Harper</h3>
+<div class="w-full bg-background-dark/10 dark:bg-background-light/10 rounded-full h-1.5 my-2">
+<div class="bg-primary h-1.5 rounded-full" style="width: 60%"></div>
+</div>
+<p class="text-xs text-background-dark/60 dark:text-background-light/60">Progress: 60%</p>
+<a class="mt-3 text-xs font-medium text-primary hover:underline" href="#">View Profile</a>
+</div>
+<div class="bg-background-light dark:bg-background-dark/50 p-4 rounded-xl border border-background-dark/10 dark:border-background-light/10 flex flex-col items-center text-center">
+<div class="relative">
+<img alt="Liam Foster" class="w-24 h-24 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpnIEysg_MaXiY14yqFnVOvTpNaHO6CKx2ILlj74Jp279aH3OxuNL_voXLAExi7CzGJqfYFnKbImktfkBLqliAA9V0AnPJ70BdfUpnFWmYrnnoeRufHa48xSWsKoRPO_NoQhDn7cYgiFGM1iK3127Dx3j4N8rMJTwvjdmIYdXZQO1xNAcB8PP6k4YXZTBY-AVE6xDzLE5jL9jEOzpY_5hCBVUiwvtsfeUXbccVBRCPoRL0yYmhH0WNo6gF5pw2JoVDLAlmws60Z0s"/>
+</div>
+<h3 class="mt-4 text-base font-semibold text-background-dark dark:text-background-light">Liam Foster</h3>
+<div class="w-full bg-background-dark/10 dark:bg-background-light/10 rounded-full h-1.5 my-2">
+<div class="bg-primary h-1.5 rounded-full" style="width: 85%"></div>
+</div>
+<p class="text-xs text-background-dark/60 dark:text-background-light/60">Progress: 85%</p>
+<a class="mt-3 text-xs font-medium text-primary hover:underline" href="#">View Profile</a>
+</div>
+<div class="bg-background-light dark:bg-background-dark/50 p-4 rounded-xl border border-background-dark/10 dark:border-background-light/10 flex flex-col items-center text-center">
+<div class="relative">
+<img alt="Isabella Hayes" class="w-24 h-24 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLHnzxrZQjKdiln9NsTsuQU5k4AcUJ5p647Vi3hiWtScSOGEaYtUybOVrhiIGrqkY0-LjPvuFciy5TS5JK5JR34Y3kjQt8phv3hkGsbw5b3PDN39JTbG43y8eZUsyImsKTC6yxHRK8n34xhO4pUaYieH-_2m0b22_iNYwkVpVh00o0i_TJJ7EgwlGCdGDfaefS-1oUbWeTItDj_dtWbmcDQ4BtTN_ir_scZMyEUbBkZU8EHJeJ8g_kDgiGHkbH68ERBXzOX-YQspM"/>
+</div>
+<h3 class="mt-4 text-base font-semibold text-background-dark dark:text-background-light">Isabella Hayes</h3>
+<div class="w-full bg-background-dark/10 dark:bg-background-light/10 rounded-full h-1.5 my-2">
+<div class="bg-primary h-1.5 rounded-full" style="width: 70%"></div>
+</div>
+<p class="text-xs text-background-dark/60 dark:text-background-light/60">Progress: 70%</p>
+<a class="mt-3 text-xs font-medium text-primary hover:underline" href="#">View Profile</a>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

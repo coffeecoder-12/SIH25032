@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Goal Mitr - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f9a406",
+            "background-light": "#f8f7f5",
+            "background-dark": "#231c0f",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="flex min-h-screen">
+<div class="hidden lg:block w-3/5 bg-center bg-cover" style="background-image: url('/loginScreenbg.jpg');">
+<div class="w-full h-full bg-slate-900/30"></div>
+</div>
+<div class="w-full lg:w-2/5 flex items-center justify-center p-8 lg:p-12 bg-[#978CB2]">
+<div class="w-full max-w-md">
+<div class="bg-background-light/10 dark:bg-background-dark/50 p-8 lg:p-12 rounded-lg shadow-2xl space-y-8">
+<div class="text-center">
+<h1 class="text-5xl font-black text-slate-900 dark:text-white">Goal Mitr</h1>
+<p class="mt-2 text-slate-600 dark:text-slate-400">Empowering individuals and teams to achieve their goals.</p>
+</div>
+<div class="space-y-4">
+<h2 class="text-3xl font-bold text-center text-slate-800 dark:text-slate-100">Sign In</h2>
+<div class="flex flex-col space-y-4">
+<button onclick="location.href='/EmployeeDashboard.html'" class="group flex items-center justify-center w-full bg-primary text-slate-900 dark:text-black font-bold py-3 px-4 rounded-full text-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
+<span class="material-symbols-outlined mr-2">person</span>
+                Log in as Employee
+              </button>
+<button onclick="location.href='/ManagerDashboard.html'" class="group flex items-center justify-center w-full bg-primary/20 dark:bg-primary/30 text-slate-800 dark:text-slate-200 font-bold py-3 px-4 rounded-full text-lg hover:bg-primary/40 dark:hover:bg-primary/50 transition-all duration-300 transform hover:scale-105">
+<span class="material-symbols-outlined mr-2">shield_person</span>
+                Log in as Manager
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

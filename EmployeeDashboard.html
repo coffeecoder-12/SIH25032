@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Goal Mitr Employee Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f9a406",
+              "background-light": "#f8f7f5",
+              "background-dark": "#231c0f",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 px-10 py-4 dark:border-primary/30">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-2xl font-bold text-slate-900 dark:text-background-light">
+            Goal Mitr
+          </h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Jane Doe</span>
+<button class="flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-slate-900 transition-transform hover:scale-105">
+<span class="material-symbols-outlined"> diversity_3 </span>
+<span class="truncate">Give Kudos</span>
+</button>
+<div class="aspect-square w-10 rounded-full bg-cover bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQij3YbCmLiuDemTSdwrrKEPpg9K_53Y4aEktoQMsCDsgRLC5C7zYRgzmM5BO6-DCon7YojeYXQI-c_YOZ7aMtGF-20z5ViASAjYI7RGyAdC00Ro-RLpuFtw_yZqFR_VfqaFKQ3nEtLUJf2VBam2L10WteaH4gUVWkzd3dmxqJx2rNTSragyLU9jkfRqutm6bIpoqYpsaODz8a7D1cvBSbM9QqD9lKSnTo82GpWaTidl3G3ik8-IE39TuJPPhHAyPWcJBHs_Oy5Xlc");' onclick="location.href='/EmployeeProfile.html'"></div>
+</div>
+</header>
+<main class="grid flex-1 grid-cols-12 gap-8 p-8">
+<div class="col-span-12 lg:col-span-8">
+<div class="flex items-center justify-between pb-6">
+<h2 class="text-3xl font-bold text-slate-900 dark:text-background-light">
+              My Current Goals
+            </h2>
+</div>
+<div class="space-y-6">
+<div class="rounded-xl border border-primary/20 bg-background-light p-6 shadow-sm dark:border-primary/30 dark:bg-slate-800/20">
+<div class="flex items-start justify-between gap-6">
+<div class="flex-1 space-y-3">
+<h3 class="text-lg font-bold text-slate-900 dark:text-background-light">
+                    Complete Project Alpha
+                  </h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">
+                    Due: July 15, 2024
+                  </p>
+<div class="h-2 w-full rounded-full bg-primary/20">
+<div class="h-2 rounded-full bg-primary" style="width: 75%"></div>
+</div>
+</div>
+<div class="h-24 w-36 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAqs8-o-ibilK0A7QiN_OPR07QqMsu8_-NuQHK3w_KZj1noSEg2YRWfRnvAkWsphVHPSnwjFw3U_b1Hzw1v3BlNGs3glj79vEwFtla6mFjiyz6JETt3LpJcvZQAAjS0LG60jPjcDmMAR-sQTpUICXIKtTH2_tvFKC_Z3edM3I1gXjdqsmsJyf4Vz6bG1HhQVHYPsHLf-9y7lEOa-1NBcPgDV2Buixxth_XNQ7hMBdKVP2mMA18fXnYk0auxmkYIU6LNFGwKBgrX6MWz");'></div>
+</div>
+</div>
+<div class="rounded-xl border border-primary/20 bg-background-light p-6 shadow-sm dark:border-primary/30 dark:bg-slate-800/20">
+<div class="flex items-start justify-between gap-6">
+<div class="flex-1 space-y-3">
+<h3 class="text-lg font-bold text-slate-900 dark:text-background-light">
+                    Launch Marketing Campaign
+                  </h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">
+                    Due: August 1, 2024
+                  </p>
+<div class="h-2 w-full rounded-full bg-primary/20">
+<div class="h-2 rounded-full bg-primary" style="width: 40%"></div>
+</div>
+</div>
+<div class="h-24 w-36 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4jCgIwZFvXRr4_X55Rnuu_V99cvig22xGC_vlv_bwuM0teCpSOYLlC8dkrZZ9u2HjzR_F6UFmf-BSCIQv1NwGwLoV3ylNBX0RVCE6d5fKtWIxaGY1Az1wV4CT5T7-TZmTq2Bf7ZsDOLujqU25MpxBry0YRqGgAPtaLTSrcCZrkOleOOmDz8mRTM5C5NpOl6sLc-tsauiI8oCOfna-AidOWZmxOPuys0NZS9_dbz_TFVfIyIEXVZQANJYvqLM7-VG0E1LSjv7SsRQN");'></div>
+</div>
+</div>
+<div class="rounded-xl border border-primary/20 bg-background-light p-6 shadow-sm dark:border-primary/30 dark:bg-slate-800/20">
+<div class="flex items-start justify-between gap-6">
+<div class="flex-1 space-y-3">
+<h3 class="text-lg font-bold text-slate-900 dark:text-background-light">
+                    Improve Customer Satisfaction
+                  </h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">
+                    Due: September 30, 2024
+                  </p>
+<div class="h-2 w-full rounded-full bg-primary/20">
+<div class="h-2 rounded-full bg-primary" style="width: 20%"></div>
+</div>
+</div>
+<div class="h-24 w-36 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2M-A5qEJnMIquW9PGU3btk3pKzXInukhjO8sHHhF3tlWzf9l94c9cylAgneh7T8m4MRYcvYp44hiqyI5fIiNf9it2-KsGjk9rWyadmYNcCh3DbgL9l6YQcYZ3Cj4r2rwTO-Gv3n6rhZC3ORq9LoriroDSR3RtHf34jhp52ouqTLT2dDTfp_Wna8m3cjaQTY7Nq1ygFlGGqMFfgyklIKSFAciFel6OhX6VbkYGhB_2vCx1vtt0NE9nP0DIgwJnPwCqDcFZS8MxlJ46");'></div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<button class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-bold text-slate-900 transition-transform hover:scale-105">
+<span class="material-symbols-outlined"> auto_awesome </span>
+<span class="truncate">AI Goal Suggester</span>
+</button>
+</div>
+</div>
+<aside class="col-span-12 space-y-8 lg:col-span-4">
+<div class="rounded-xl border border-primary/20 bg-background-light p-6 shadow-sm dark:border-primary/30 dark:bg-slate-800/20">
+<h3 class="mb-4 text-xl font-bold text-slate-900 dark:text-background-light">
+              Gamification View
+            </h3>
+<div class="grid grid-cols-3 gap-4">
+<div class="flex flex-col items-center gap-2 rounded-lg bg-primary/10 p-4 dark:bg-primary/20">
+<span class="material-symbols-outlined text-3xl text-primary">
+                  workspace_premium
+                </span>
+<span class="text-2xl font-bold text-slate-800 dark:text-slate-200">1250</span>
+<span class="text-sm text-slate-600 dark:text-slate-400">Points</span>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-lg bg-primary/10 p-4 dark:bg-primary/20">
+<span class="material-symbols-outlined text-3xl text-primary">
+                  local_fire_department
+                </span>
+<span class="text-2xl font-bold text-slate-800 dark:text-slate-200">7</span>
+<span class="text-sm text-slate-600 dark:text-slate-400">Streak</span>
+</div>
+<div class="flex flex-col items-center gap-2 rounded-lg bg-primary/10 p-4 dark:bg-primary/20">
+<span class="material-symbols-outlined text-3xl text-primary">
+                  military_tech
+                </span>
+<span class="text-2xl font-bold text-slate-800 dark:text-slate-200">3</span>
+<span class="text-sm text-slate-600 dark:text-slate-400">Badges</span>
+</div>
+</div>
+</div>
+<div class="rounded-xl border border-primary/20 bg-background-light p-6 shadow-sm dark:border-primary/30 dark:bg-slate-800/20">
+<h3 class="mb-4 text-xl font-bold text-slate-900 dark:text-background-light">
+              Recent Kudos
+            </h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="aspect-square w-12 flex-shrink-0 rounded-full bg-cover bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3uAHcW5ChqBZkf3fKRs81eYR4D62XItJcssC51bva9qFfBRZlSk4cDmD1TPlGjGU06PU2_HBIYcv7MA1Qz9Y56OVaT6xiQz3cetaIL2vskK4g7goyDw1UepHQyy7PYqc5N-mQqlCwa37AqdN8fWAueQBqfBh-NypbiPakXRAt6sxAORpawKS9N2Lc31ZK4ewYlVuu_p6I6wQJs8U7BmtT5X7yPalH9WeK4v0SDrhUec3We03h8FT5VsQH8zJRPHPLGS3Rz5wlbEOR");'></div>
+<div class="flex flex-col">
+<p class="font-semibold text-slate-800 dark:text-slate-200">
+                    From: Sarah Chen
+                  </p>
+<p class="text-sm text-slate-600 dark:text-slate-400">
+                    "Great job on the presentation!"
+                  </p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="aspect-square w-12 flex-shrink-0 rounded-full bg-cover bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1GKHfNFR9JiqIfwGr3Xs2bRBVmeU6hPfzMa46wnHGH_DwoyfzzTgvLYtwuWEB_IC7l3gZKy1XakNl3MMPnmpAraMmNlUKQ79NY8RrrkB8EwYY9Z5L42NEg8jpvbaB7dl5hulM7W2TJwgwjZvmHTmtoAUKjAuz-9mdN6aK8ZnPTOaYaJjgLeezmO7vFpDNOPdRc4FuMPrcKOoVt9_ZE2YeZhjR0Pfz4HTFXlI7fYLtArRTC0-LQOPulL7TBR8jRzN0CcH8Gc6T657o");'></div>
+<div class="flex flex-col">
+<p class="font-semibold text-slate-800 dark:text-slate-200">
+                    From: David Lee
+                  </p>
+<p class="text-sm text-slate-600 dark:text-slate-400">
+                    "Thanks for your help with the report."
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl border border-primary/20 bg-background-light p-6 shadow-sm dark:border-primary/30 dark:bg-slate-800/20">
+<h3 class="mb-4 text-xl font-bold text-slate-900 dark:text-background-light">
+              Areas for Growth
+            </h3>
+<div class="space-y-3">
+<div class="flex items-center justify-between gap-4">
+<p class="text-slate-700 dark:text-slate-300">Data Analysis</p>
+<button class="rounded-lg bg-primary/20 px-3 py-1 text-sm font-medium text-slate-800 transition-colors hover:bg-primary/30 dark:bg-primary/30 dark:text-slate-200 dark:hover:bg-primary/40">
+                  Find Training
+                </button>
+</div>
+<div class="flex items-center justify-between gap-4">
+<p class="text-slate-700 dark:text-slate-300">
+                  Project Management
+                </p>
+<button class="rounded-lg bg-primary/20 px-3 py-1 text-sm font-medium text-slate-800 transition-colors hover:bg-primary/30 dark:bg-primary/30 dark:text-slate-200 dark:hover:bg-primary/40">
+                  Find Training
+                </button>
+</div>
+<div class="flex items-center justify-between gap-4">
+<p class="text-slate-700 dark:text-slate-300">
+                  Communication Skills
+                </p>
+<button class="rounded-lg bg-primary/20 px-3 py-1 text-sm font-medium text-slate-800 transition-colors hover:bg-primary/30 dark:bg-primary/30 dark:text-slate-200 dark:hover:bg-primary/40">
+                  Find Training
+                </button>
+</div>
+</div>
+</div>
+</aside>
+</main>
+</div>
+
+</body></html>

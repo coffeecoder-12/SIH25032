@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Goal Mitr - Employee Profile</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f59e0b",
+                        "primary-content": "#ffffff",
+                        "primary-focus": "#d97706",
+                        "background-light": "#fef9f3",
+                        "background-dark": "#1f1d1a",
+                        "text-light": "#1f1d1a",
+                        "text-dark": "#fef9f3",
+                        "text-muted-light": "#85725a",
+                        "text-muted-dark": "#a1917d",
+                        "border-light": "#fde8d1",
+                        "border-dark": "#3a3631"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="min-h-screen">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 px-10 py-4 dark:border-primary/30">
+</a><div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-2xl font-bold text-slate-900 dark:text-background-light" ">
+            Goal Mitr
+          </h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Jane Doe</span>
+<button class="flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-slate-900 transition-transform hover:scale-105">
+<span class="truncate">Give Kudos</span>
+</button>
+<div class="aspect-square w-10 rounded-full bg-cover bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQij3YbCmLiuDemTSdwrrKEPpg9K_53Y4aEktoQMsCDsgRLC5C7zYRgzmM5BO6-DCon7YojeYXQI-c_YOZ7aMtGF-20z5ViASAjYI7RGyAdC00Ro-RLpuFtw_yZqFR_VfqaFKQ3nEtLUJf2VBam2L10WteaH4gUVWkzd3dmxqJx2rNTSragyLU9jkfRqutm6bIpoqYpsaODz8a7D1cvBSbM9QqD9lKSnTo82GpWaTidl3G3ik8-IE39TuJPPhHAyPWcJBHs_Oy5Xlc");' onclick="location.href='/EmployeeProfile.html'"></div>
+</div>
+</header>
+<main class="flex-1 p-6 lg:p-10 bg-background-light dark:bg-background-dark">
+<div class="max-w-4xl mx-auto">
+<div class="flex flex-col sm:flex-row items-center gap-6 mb-10">
+<img alt="Sarah Miller" class="w-32 h-32 rounded-full object-cover border-4 border-white dark:border-background-dark shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsYSfMcovIMkXf5fYQmIZDOWkdyXExFwhJRzfrn_2toaNVx2aGouldfU1TmS1wbFOWhS0X_myN65dXYoCILrxoxUrT_ixoo-LSmkiT9NorG-qJ7a_HSScnkEvAvnB83JVbT6JjnTI2kuGTTCz3pFKE2L_ORJnZzp0m-pGnKhjUveTLVIDEi7Vo28SqFMleh7QKFSVSgvnKNMmfp2kRIdWDLlcAzmiwHSvTJncgR6kQzmm6sPhM735xR90kCxej__ea13LkR4-R_JGF"/>
+<div class="text-center sm:text-left">
+<h1 class="text-3xl font-bold text-text-light dark:text-text-dark">Sarah Miller</h1>
+<p class="text-lg text-primary">IT Engineer</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1 space-y-8">
+<div class="bg-white dark:bg-background-dark rounded-lg p-6 shadow-sm border border-border-light dark:border-border-dark">
+<h2 class="text-xl font-bold mb-4">Contact Information</h2>
+<div class="space-y-4 text-sm">
+<div class="flex items-center gap-3">
+<svg class="text-text-muted-light dark:text-text-muted-dark" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,48H32a8,8,0,0,0-8,8V192a8,8,0,0,0,8,8H224a8,8,0,0,0,8-8V56A8,8,0,0,0,224,48Zm-8.45,16L128,115.65,39.45,64ZM40,184V71.82l85.52,53.45a8,8,0,0,0,4.9,1.55,8,8,0,0,0,4.9-1.55L216,71.82V184Z"></path>
+</svg>
+<span class="text-text-light dark:text-text-dark">sarah.miller@company.com</span>
+</div>
+<div class="flex items-center gap-3">
+<svg class="text-text-muted-light dark:text-text-muted-dark" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M222.39,157.84A16,16,0,0,0,208,152a32,32,0,0,1-32-32V80a16,16,0,0,0-16-16H96A16,16,0,0,0,80,80v40a32,32,0,0,1-32,32,16,16,0,0,0-14.39,5.84l-24,40A16,16,0,0,0,24,224H232a16,16,0,0,0,14.39-26.16ZM40,208,57.17,178.1a48,48,0,0,0,44.7-30.82,8,8,0,0,0,1.86,0,48,48,0,0,0,44.7,30.82L168,208H152v-8a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v8ZM96,80h64v40a48,48,0,0,0,9.72,28.53A32.13,32.13,0,0,1,160,120V80a32,32,0,0,1,32-32,32,32,0,0,1,32,32v40a48.06,48.06,0,0,0-9.72,28.53c.12-.08.25-.16.37-.24l17.17-28.62L200,208Z"></path>
+</svg>
+<span class="text-text-light dark:text-text-dark">+1-555-123-4567</span>
+</div>
+<div class="flex items-center gap-3">
+<svg class="text-text-muted-light dark:text-text-muted-dark" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm40,24a28,28,0,1,1-28-28A28,28,0,0,1,136,136Zm56-48a8,8,0,0,1-8,8,48,48,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32,8,8,0,0,1,8-8Z"></path>
+</svg>
+<a class="text-primary hover:underline" href="#">linkedin.com/in/sarahm</a>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-lg p-6 shadow-sm border border-border-light dark:border-border-dark">
+<h2 class="text-xl font-bold mb-4">My Team</h2>
+<div class="flex items-center justify-between">
+<span class="text-text-light dark:text-text-dark">Product Development</span>
+<span class="text-xs font-bold uppercase bg-primary/20 text-primary px-2 py-1 rounded-full">Lead</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 space-y-8">
+<div class="bg-white dark:bg-background-dark rounded-lg p-6 shadow-sm border border-border-light dark:border-border-dark">
+<h2 class="text-xl font-bold mb-4">Achievements &amp; Skills</h2>
+<h3 class="font-semibold mb-3 text-text-muted-light dark:text-text-muted-dark">Badges</h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-6">
+<div class="aspect-square bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjW6urnjxma970W6jpABtzqb6VxCLjZGgb9nfrWzYoA9uTFZ2WT_SH9H5cic16KvG5MwrwC4pUxQ0Fckg-xVTIm-iy1GW-PxnDxBpvGHuo7niI6pX3KBQkSZsdCPrmvGWRRyjvhmV4pHBiYoIY5ZE72XtorszgYszwTsMLweFG4JWjz3iBfWQVYDNQ7TDY5Vq0OD59bnBVyMVT1O3oqBgbtEduXhl7NvQsUI2p_7WnhzOQiMfac0z5YQko7P7F5FpXnG3rLOhh7FxF");'></div>
+<div class="aspect-square bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3KyWbssz4YjAmt2uxbe5gstVKAnzDdaa4HzyKr_VYAWQSL4Zy2NZM8AZd65o3IgDOn1NTguORMkZqHf9A0wWRJOPGSGGowXCRALp5T5xljyVsEAXevuCYLyscOtzO2viG6ZW34ufWHT70dfFzY55Bb7qZwrMhBydqDWnN2IPxR-5rHAsPoEwcfj4MtFdVITMkUt4v-R9cmA013IcYatPpCUS2fUE6uKzKbPwHZdEgic5Z7TGpOd7EVWq-Irmj7IkDwofZxyck7y9o");'></div>
+<div class="aspect-square bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRFnmuw4N9KzRInwQGb86exmgqzmQJ7WG_8Xa30dj6bVurN_OMobwQBJxzlIw8sh7JumpSL31R_IvFdCg9BLe_OpYz5nPaWKcV8UhAtQfQ3d0TDoNQHr-m_Y8CtqfWgTEvWfZ_r_uRwo_7Q3-ZuaI7UrxX6iBjplzyQM4ITx0jWnI7swdiVCWdKXyFCw1ic9QreG30SmQ1G9OkB_BQGraWQJN_-DTS3o_FN60rm6v40BuIoEbF03oCfvGcrLR93FBrhWOFsYM6cHMN");'></div>
+</div>
+<h3 class="font-semibold mb-3 text-text-muted-light dark:text-text-muted-dark">Top Skills</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary/10 dark:bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Product Management</span>
+<span class="bg-primary/10 dark:bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Agile Methodologies</span>
+<span class="bg-primary/10 dark:bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">User Research</span>
+<span class="bg-primary/10 dark:bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Cross-functional Collaboration</span>
+<span class="bg-primary/10 dark:bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Strategic Planning</span>
+</div>
+</div>
+<div class="flex justify-end gap-4 mt-8">
+<button class="px-6 py-2 rounded-lg font-bold bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-text-light dark:text-text-dark hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors">Edit Profile</button>
+<button class="px-6 py-2 rounded-lg font-bold bg-primary text-white hover:bg-primary-focus transition-colors" onclick="location.href='/index.html'">Sign Out</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
