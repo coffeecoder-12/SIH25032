@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Goal Mitr - Give Kudos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+            "primary": "#FE9083",
+            "background-light": "#D5C2EF",
+            "background-dark": "white",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-neutral-800 dark:text-neutral-200">
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 px-10 py-4 dark:border-primary/30">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<a href="EmployeeDashboard.html">
+<h1 class="text-2xl font-bold text-slate-900 dark:text-background-light">
+            Goal Mitr
+          </h1></a>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Jane Doe</span>
+<button class="flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-slate-900 transition-transform hover:scale-105" onclick="location.href='giveKudos.html'">
+<span class="material-symbols-outlined"> diversity_3 </span>
+<span class="truncate">Give Kudos</span>
+</button>
+<div class="aspect-square w-10 rounded-full bg-cover bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQij3YbCmLiuDemTSdwrrKEPpg9K_53Y4aEktoQMsCDsgRLC5C7zYRgzmM5BO6-DCon7YojeYXQI-c_YOZ7aMtGF-20z5ViASAjYI7RGyAdC00Ro-RLpuFtw_yZqFR_VfqaFKQ3nEtLUJf2VBam2L10WteaH4gUVWkzd3dmxqJx2rNTSragyLU9jkfRqutm6bIpoqYpsaODz8a7D1cvBSbM9QqD9lKSnTo82GpWaTidl3G3ik8-IE39TuJPPhHAyPWcJBHs_Oy5Xlc");' onclick="location.href='EmployeeProfile.html'"></div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-3xl mx-auto">
+<div class="mb-8">
+<h2 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-white sm:text-4xl">Give Kudos</h2>
+<p class="mt-2 text-lg text-neutral-600 dark:text-neutral-400">Recognize your colleagues for their hard work and achievements.</p>
+</div>
+<div class="space-y-12">
+<div class="space-y-6">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-neutral-500 dark:text-neutral-400">search</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg bg-background-light dark:bg-background-dark border border-neutral-300 dark:border-neutral-700 focus:ring-2 focus:ring-primary focus:border-primary transition" placeholder="Search team members..." type="search"/>
+</div>
+<div>
+<h3 class="text-lg font-semibold leading-6 text-neutral-900 dark:text-white mb-4">Select Team Members</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div onclick="location.href='SophiaClark.html'" class="flex items-center gap-4 p-3 rounded-lg border border-transparent hover:bg-primary/10 dark:hover:bg-primary/20 hover:border-primary/20 dark:hover:border-primary/30 cursor-pointer transition-all group">
+<div class="w-12 h-12 rounded-full bg-cover bg-center flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkhe3sQvFzc7lHVAguRkEop7zMsDyEjRr3YwIvNFerskleeK1K40PSrJy9VzwB48j4xwaVP5O7P5MgOY9Cb0sg8C8VTxDM4RTnAbphbWIbgcXrCR5Q5Q0pro4y6tRxK7B5oz-vPJYZyFgFVDWtlD7LhYhQHiEZFh523RE8fpe26curAbCRKV0pmWcEc8dKX37N3rpGzNSZUYeToKuvpE6f3t49aOAao1pPXJELTtL3Lq5FQtrA9CXisl-sb4u7zk-m76OOE9zsVeXF");'></div>
+<div class="flex-grow" ondoubleclick="location.href='SophiaClark.html'">
+<p class="font-medium text-neutral-800 dark:text-neutral-100">Sophia Bennett</p>
+<p class="text-sm text-neutral-500 dark:text-neutral-400">Team Lead</p>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check_circle</span>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg border border-transparent hover:bg-primary/10 dark:hover:bg-primary/20 hover:border-primary/20 dark:hover:border-primary/30 cursor-pointer transition-all group">
+<div class="w-12 h-12 rounded-full bg-cover bg-center flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvpQiatGIQZNXVq-QZ3mJDYPmgBu6JymT8VhfAIr6AoZyBQG1gecNUXTSpBWzxHLb5Jc5lmFjHl5iC_iPKpT_1LpOLcL4l2v_aFcrTVmaPexwnswtrLRLRbAema4cFIcP-lTKbf6c09moumVTVtRGCVbQjQNpRGQOsV8PeF-NAPpZ8Zed6wZBVA2nGsP5uoTvcDe8-TbNBULXaprzfqPMnKZYPRk9zBbKB3j7cgtkGM0e4UIRhckMirs4ImBK8cIsumDGxnuZRU5Dy");'></div>
+<div class="flex-grow">
+<p class="font-medium text-neutral-800 dark:text-neutral-100">Ethan Miller</p>
+<p class="text-sm text-neutral-500 dark:text-neutral-400">Software Engineer</p>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check_circle</span>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg border border-transparent hover:bg-primary/10 dark:hover:bg-primary/20 hover:border-primary/20 dark:hover:border-primary/30 cursor-pointer transition-all group">
+<div class="w-12 h-12 rounded-full bg-cover bg-center flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDg-cC-kZBGGyzGJzytfXy7-5rWYYsqvoWC6TnpSkeITPTmiFUNEX1Oz278Ur507W1HOOAhJrf0GW7u5Yq6YztRKIWy1ZCtDoSADl419VayN1Smp2I76wqsDghdgzaipbEjELDRqJFg9wrA7lNgjVnS4UBkLJ3mZ78Jq94KtGcK-92OEe0xdlqmUYYMA-DP9joVxcGnjNRlyjzoRwbevBE2rk4HpMUeHKMvyfAvsrcWzSj6cOyK1HfFkqHiOQ23mNGhIXPaUnrSXDBw");'></div>
+<div class="flex-grow">
+<p class="font-medium text-neutral-800 dark:text-neutral-100">Olivia Davis</p>
+<p class="text-sm text-neutral-500 dark:text-neutral-400">Product Manager</p>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check_circle</span>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg border border-primary/20 dark:border-primary/30 bg-primary/10 dark:bg-primary/20 cursor-pointer transition-all group">
+<div class="w-12 h-12 rounded-full bg-cover bg-center flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLTR2XuIALZepfzrzqhr3l8Fte27Gk_HfKTmsEuNB9fDZurA6s4rBmLtBybqtAT70WQcbhPcaE8v37pksozvllUDcMWQO_pVhshniwoGCXd3njticZFjH1Xn3uIQDq9U0M7V9F_M0Hul6nLndIPg23VVHVZVurVj0tUtfKT8r1oaR4ZgMubsQrrOQhbstaN-Sv4JD4iSl9L_elmQNkUJ5ArhCCohJxPClvp0HwBwpbp_6yHyaMt_sZ6Q7Z-M1Ww_mY_wQ_PAkh9Bq2");'></div>
+<div class="flex-grow">
+<p class="font-medium text-neutral-800 dark:text-neutral-100">Noah Wilson</p>
+<p class="text-sm text-neutral-500 dark:text-neutral-400">UX Designer</p>
+</div>
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold leading-6 text-neutral-900 dark:text-white mb-4">Select Manager</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-center gap-4 p-3 rounded-lg border border-transparent hover:bg-primary/10 dark:hover:bg-primary/20 hover:border-primary/20 dark:hover:border-primary/30 cursor-pointer transition-all group">
+<div class="w-12 h-12 rounded-full bg-cover bg-center flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfVSDUwf3C0kVJx9jcz9SbLMOo6Ze3cd47ScD7kVk4kQpYBpO1-EQFtTMRgh9tjP68nDc9I8Ada-CE_nrFmFpQjyDbKId7IjXMjJaCSRvHl86jwB_OR0am-0glqxxs_2slVwfhkuUlsXX5zSDJq5lk1BGwWQzHIC66ZB0vt_tp44pQ5LYgSF6PxnXIIQeKW2TW2flsk04_QhrXfySLE7rF2EU_ig99IiAoozQyKzu4CEZup64iIukfs5rR-qapcCmJWDOUbhgTW-Pa");'></div>
+<div class="flex-grow">
+<p class="font-medium text-neutral-800 dark:text-neutral-100">Sophia Clark</p>
+<p class="text-sm text-neutral-500 dark:text-neutral-400">Team Lead</p>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">check_circle</span>
+</div>
+</div>
+</div>
+<div>
+<label class="text-lg font-semibold leading-6 text-neutral-900 dark:text-white mb-4 block" for="kudos-message">Kudos Message</label>
+<textarea class="w-full rounded-lg bg-background-light dark:bg-background-dark border border-neutral-300 dark:border-neutral-700 focus:ring-2 focus:ring-primary focus:border-primary transition" id="kudos-message" placeholder="Write your kudos message here..." rows="5"></textarea>
+</div>
+</div>
+<div class="flex justify-end">
+<button class="bg-primary text-neutral-900 font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all transform hover:scale-105 flex items-center gap-2">
+<span class="material-symbols-outlined">thumb_up</span>
+<span>Send Kudos</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

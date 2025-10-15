@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Goal Mitr - Strategic Tools</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Goal Mitr - Strategic Tools</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <script>
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
           colors: {
-            "primary": "#f9a406",
-            "background-light": "#f8f7f5",
-            "background-dark": "#231c0f",
+            "primary": "#FE9083",
+            "background-light": "#D5C2EF",
+            "background-dark": "white",
           },
           fontFamily: {
             "display": ["Inter"]
@@ -31,7 +34,8 @@
       },
     }
   </script>
-<style>
+
+  <style>
     .drag-placeholder {
       border: 2px dashed #f9a406;
       background-color: rgba(249, 164, 6, 0.1);
@@ -42,11 +46,17 @@
       border-radius: 0.5rem;
       height: 100%;
     }
+
+    .team-member.ring-4 {
+      transition: box-shadow 0.15s, border 0.15s;
+      border-color: #FE9083;
+    }
   </style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-<div class="flex flex-col min-h-screen">
-<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+  <div class="flex flex-col min-h-screen">
+   <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex items-center justify-between h-16">
 <div class="flex items-center gap-4">
@@ -67,106 +77,130 @@
 </div>
 </div>
 </header>
-<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-<div class="max-w-7xl mx-auto">
-<h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Strategic Tools</h2>
-<div class="border-b border-gray-200 dark:border-gray-700">
-<nav aria-label="Tabs" class="-mb-px flex space-x-8">
-<a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#">
-              Resource Allocation Simulator
-            </a>
-<a class="border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:border-gray-300 dark:hover:border-gray-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#optimal-task-assignment-widget">
-              Optimal Task Assignment
-            </a>
-</nav>
-</div>
-<div class="mt-8" id="resource-allocation-simulator">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-<h3 class="text-lg font-bold text-gray-900 dark:text-white">Available Team Members</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Drag a team member to an open project slot.</p>
-<div class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
-<div class="space-y-2 cursor-grab active:cursor-grabbing">
-<div class="aspect-square w-full bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7H92HebO8Z2M0OYssCgiFI6vOLI06qlvHeweYWk_StK2MkwEYWkE2BMYIQT-f18ZW-pBw4dsGovnpKWwY5_Z81b4VA22IA7pqQIQA03yPBhJKi0g4WjpyySSuAOMZUGhuXydXxE2sTsglXVbwS8BW6ZxfpPTjIV-3MYHc44wiNIzRS65nGLG4B0vJtvV_HKqYXmefIpCA3TUnFWE8ut8F6RestMue_5MWRWq-ny9U60LWkO0kRr6h0yQEQoOBdxai08hjqRmtRjc");'></div>
-<div>
-<p class="font-medium text-gray-800 dark:text-gray-200">Ethan Carter</p>
-<p class="text-xs text-gray-500 dark:text-gray-400">PM, Agile</p>
-</div>
-</div>
-<div class="space-y-2 cursor-grab active:cursor-grabbing">
-<div class="aspect-square w-full bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWokASNL82nMKPKdLUKti0O5IJFP1SwSntkpLrhTdrVPSjTP79wraN8uGGaTLrFWjzgekscxHyDlXc7UxcOW_iHfkIy4bdPCNVZfcuT4lDJjesRpF8RMgIgJo0AKfMCKOXzbKLV5ZoPP5J394bh6xL6HWOL9_wgm4gIbcevlYx_A6oqi-cmA1S-ckDDV5p_Wm2xwkk6JsLCfFkEssCStwq8bjJkVZPzyhfNAkAsF739n_Htt7yTj1mLTyL0FX0MB_7xEGVGeNo9wo");'></div>
-<div>
-<p class="font-medium text-gray-800 dark:text-gray-200">Olivia Bennett</p>
-<p class="text-xs text-gray-500 dark:text-gray-400">UI/UX, Prototyping</p>
-</div>
-</div>
-<div class="space-y-2 cursor-grab active:cursor-grabbing">
-<div class="aspect-square w-full bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHv5L1WPAPaho356A28tMEV5MNUcVP0MvE31ux4XHqFj4umztydITbtQ6czHax7cD0WcHGwLuzU4ySPT3wkrwe2rPBel1g3UjDBMPHxXnZOdsXnuegfc1DB6WAqMhg_J3AqqIFe8VXXfpmWOySR1pN5A_rfTWUuGJQLA7t-Q9BH1odKhy1zodpXM7EB3C3ljxxixBqN1GWpAK37Kg52u8bwgn4WcB7mRrPZxJ1txEMigw7TvWn6qLEbetE8aj8GNseRNCA-y5bmnU");'></div>
-<div>
-<p class="font-medium text-gray-800 dark:text-gray-200">Noah Harper</p>
-<p class="text-xs text-gray-500 dark:text-gray-400">Backend, Python</p>
-</div>
-</div>
-<div class="space-y-2 cursor-grab active:cursor-grabbing">
-<div class="aspect-square w-full bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAywMVv25ABktP-wy_GknTX3wbYCrtp6YvkXWiVIpTT73fPjqlgUdpUqPn59flMi9PBFhMMrAS5zd-dsQ6McDIKFnnbOkdODagx-l9Lvr5sO68UP6LNbFupiF145XDMROZghfDbz-njrTp89NPbPq92H168VKQUwL2ShJhKWbpEzccvqHe_p9iOF3LpUjCOAdtFW7RB7miR348l9ttjYSfrxjGx8CbLk8e2u7IJ18Y4MQorvgFX09MTIEDtB9jqX1BVwVftxgCQuK4");'></div>
-<div>
-<p class="font-medium text-gray-800 dark:text-gray-200">Sophia Hayes</p>
-<p class="text-xs text-gray-500 dark:text-gray-400">Frontend, React</p>
-</div>
-</div>
-<div class="space-y-2 cursor-grab active:cursor-grabbing">
-<div class="aspect-square w-full bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKDIjdQaduzYxUdRLvcMVBL3ToTsfWHWSNxGxu3U_8j5ATGNmxTk5wFVqICHG7exA3K34y0qaVfUsNXng1FMGSOaHFleoX1My0NKImNwjjdcBsfGCkrsriSz110tUjDGTL2Ohlt3VLRPZmX1eud4cN7OeMz2w2PQp1zejElz9U7KwBOrwT0Hdpe4qWZWlTlVg8mWhnzhunHRkl_JiZjexv67vdOQZcNTw7OhMAPz4ErsuIMpuQSj334jAvwwyoRpOWoqnvaDJj3Dg");'></div>
-<div>
-<p class="font-medium text-gray-800 dark:text-gray-200">Liam Foster</p>
-<p class="text-xs text-gray-500 dark:text-gray-400">Data, SQL</p>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-<h3 class="text-lg font-bold text-gray-900 dark:text-white">Open Project Slots/Tasks</h3>
-<div class="mt-4 space-y-4">
-<div class="flex items-center justify-between p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-<div class="flex-1">
-<p class="font-medium text-gray-900 dark:text-white">Develop User Authentication</p>
-<p class="text-sm text-gray-500 dark:text-gray-400">Implement secure login and registration.</p>
-</div>
-<div class="w-48 ml-4">
-<div class="drag-placeholder">
-<span class="material-symbols-outlined text-sm mr-1">add</span>
-                        Assign
-                     </div>
-</div>
-</div>
-<div class="flex items-center justify-between p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-<div class="flex-1">
-<p class="font-medium text-gray-900 dark:text-white">Design Project Dashboard</p>
-<p class="text-sm text-gray-500 dark:text-gray-400">Create an intuitive project overview.</p>
-</div>
-<div class="w-48 ml-4">
-<div class="drag-placeholder">
-<span class="material-symbols-outlined text-sm mr-1">add</span>
-                        Assign
-                     </div>
-</div>
-</div>
-<div class="flex items-center justify-between p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-<div class="flex-1">
-<p class="font-medium text-gray-900 dark:text-white">Test API Endpoints</p>
-<p class="text-sm text-gray-500 dark:text-gray-400">Conduct thorough testing of backend APIs.</p>
-</div>
-<div class="w-48 ml-4">
-<div class="drag-placeholder">
-<span class="material-symbols-outlined text-sm mr-1">add</span>
-                        Assign
-                     </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="optimal-task-assignment-widget" class="mt-12 bg-background-light dark:bg-background-dark p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Strategic Tools</h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Team Members -->
+        <div
+          class="bg-background-light dark:bg-background-dark p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Available Team Members</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Click a team member to select.</p>
+          <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div class="space-y-2 cursor-pointer team-member" data-member="Aditya Raj">
+              <div class="aspect-square w-full bg-cover bg-center rounded-lg"
+                style='background-image: url("https://placehold.co/150x150?text=Aditya");'></div>
+              <div>
+                <p class="font-medium">Aditya Raj</p>
+                <p class="text-xs text-gray-500">PM, Agile</p>
+              </div>
+            </div>
+
+            <div class="space-y-2 cursor-pointer team-member" data-member="Nandini">
+              <div class="aspect-square w-full bg-cover bg-center rounded-lg"
+                style='background-image: url("https://placehold.co/150x150?text=Nandini");'></div>
+              <div>
+                <p class="font-medium">Nandini</p>
+                <p class="text-xs text-gray-500">UI/UX, Prototyping</p>
+              </div>
+            </div>
+
+            <div class="space-y-2 cursor-pointer team-member" data-member="Shubham">
+              <div class="aspect-square w-full bg-cover bg-center rounded-lg"
+                style='background-image: url("https://placehold.co/150x150?text=Shubham");'></div>
+              <div>
+                <p class="font-medium">Shubham</p>
+                <p class="text-xs text-gray-500">Backend, Python</p>
+              </div>
+            </div>
+
+            <div class="space-y-2 cursor-pointer team-member" data-member="Ritvik">
+              <div class="aspect-square w-full bg-cover bg-center rounded-lg"
+                style='background-image: url("https://placehold.co/150x150?text=Ritvik");'></div>
+              <div>
+                <p class="font-medium">Ritvik</p>
+                <p class="text-xs text-gray-500">DBMS</p>
+              </div>
+            </div>
+
+            <div class="space-y-2 cursor-pointer team-member" data-member="Tejas">
+              <div class="aspect-square w-full bg-cover bg-center rounded-lg"
+                style='background-image: url("https://placehold.co/150x150?text=Tejas");'></div>
+              <div>
+                <p class="font-medium">Tejas</p>
+                <p class="text-xs text-gray-500">AI/ML</p>
+              </div>
+            </div>
+
+            <div class="space-y-2 cursor-pointer team-member" data-member="Vishesh">
+              <div class="aspect-square w-full bg-cover bg-center rounded-lg"
+                style='background-image: url("https://placehold.co/150x150?text=Vishesh");'></div>
+              <div>
+                <p class="font-medium">Vishesh</p>
+                <p class="text-xs text-gray-500">Tester</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tasks -->
+        <div
+          class="bg-background-light dark:bg-background-dark p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Open Project Slots/Tasks</h3>
+
+          <div class="mt-4 space-y-4">
+            <div
+              class="flex items-center justify-between p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+              <div class="flex-1">
+                <p class="font-medium text-gray-900 dark:text-white">Develop User Authentication</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Implement secure login and registration.</p>
+              </div>
+              <div class="w-48 ml-4 flex flex-col items-start">
+                <button
+                  class="assign-btn flex items-center px-3 py-1 mb-2 border rounded bg-primary text-black hover:bg-primary/90">
+                  <span class="material-symbols-outlined text-sm mr-1">add</span> Assign
+                </button>
+                <ul class="assigned-names text-xs mt-1 space-y-1"></ul>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+              <div class="flex-1">
+                <p class="font-medium text-gray-900 dark:text-white">Design Project Dashboard</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Create an intuitive project overview.</p>
+              </div>
+              <div class="w-48 ml-4 flex flex-col items-start">
+                <button
+                  class="assign-btn flex items-center px-3 py-1 mb-2 border rounded bg-primary text-black hover:bg-primary/90">
+                  <span class="material-symbols-outlined text-sm mr-1">add</span> Assign
+                </button>
+                <ul class="assigned-names text-xs mt-1 space-y-1"></ul>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center justify-between p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+              <div class="flex-1">
+                <p class="font-medium text-gray-900 dark:text-white">Test API Endpoints</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Conduct thorough testing of backend APIs.</p>
+              </div>
+              <div class="w-48 ml-4 flex flex-col items-start">
+                <button
+                  class="assign-btn flex items-center px-3 py-1 mb-2 border rounded bg-primary text-black hover:bg-primary/90">
+                  <span class="material-symbols-outlined text-sm mr-1">add</span> Assign
+                </button>
+                <ul class="assigned-names text-xs mt-1 space-y-1"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="optimal-task-assignment-widget" class="mt-12 bg-background-light dark:bg-background-dark p-6 rounded-lg border border-gray-200 dark:border-gray-700">
 <h3 class="text-lg font-bold text-gray-900 dark:text-white">Optimal Task Assignment Widget</h3>
 <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Describe a new task and let AI suggest the best team member.</p>
 <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
@@ -194,8 +228,35 @@
 </div>
 </div>
 </div>
-</div>
-</main>
-</div>
 
-</body></html>
+  <!-- JavaScript for Dynamic Selection and Assignment -->
+  <script>
+    let selectedMember = null;
+
+    document.querySelectorAll('.team-member').forEach(member => {
+      member.addEventListener('click', () => {
+        document.querySelectorAll('.team-member').forEach(m => m.classList.remove('ring-4', 'ring-primary'));
+        member.classList.add('ring-4', 'ring-primary');
+        selectedMember = member.getAttribute('data-member');
+      });
+    });
+
+    document.querySelectorAll('.assign-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (!selectedMember) {
+          alert('Please select a team member first.');
+          return;
+        }
+        const assignedList = btn.parentElement.querySelector('.assigned-names');
+        const alreadyAssigned = [...assignedList.children].some(li => li.textContent === selectedMember);
+        if (!alreadyAssigned) {
+          const li = document.createElement('li');
+          li.textContent = selectedMember;
+          assignedList.appendChild(li);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Goal Mitr - Employee Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#FE9083",
+            "background-light": "#D5C2EF",
+            "background-dark": "white",
+            "text-light": "#231c0f",
+            "text-dark": "#f8f7f5",
+            "subtle-light": "#6b5e43",
+            "subtle-dark": "#a8997c",
+            "border-light": "#e6e2db",
+            "border-dark": "#4a412f",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .form-input::placeholder {
+        color: #a8997c;
+    }
+    .dark .form-input::placeholder {
+        color: #6b5e43;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="w-full">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<svg class="h-6 w-6 text-text-light dark:text-text-dark" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.236l7.388 4.105L12 12.441 4.612 8.341 12 4.236zM5 10.07v6.86l7 3.889v-7.778L5 10.07zm14 0l-7 2.941v7.778l7-3.889v-6.86z"></path>
+</svg>
+<h1 class="text-xl font-bold text-text-light dark:text-text-dark">Goal Mitr</h1>
+</div>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center">
+<div class="w-full max-w-md p-8 space-y-8 bg-white dark:bg-background-dark rounded-lg shadow-lg">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-text-light dark:text-text-dark">Employee Login</h2>
+<p class="mt-2 text-sm text-subtle-light dark:text-subtle-dark">Access your goal management dashboard.</p>
+</div>
+<form class="space-y-6">
+<div>
+<label class="text-sm font-medium text-text-light dark:text-text-dark block" for="email">Email</label>
+<input class="form-input mt-1 block w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-[#2e2616] text-text-light dark:text-text-dark focus:ring-primary focus:border-primary px-4 py-3" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<label class="text-sm font-medium text-text-light dark:text-text-dark block" for="password">Password</label>
+<a class="text-sm text-primary hover:underline" href="#">Forgot password?</a>
+</div>
+<input class="form-input mt-1 block w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-[#2e2616] text-text-light dark:text-text-dark focus:ring-primary focus:border-primary px-4 py-3" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+</div>
+<div>
+<button onclick="location.href='EmployeeDashboard.html'" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-sm text-base font-medium text-black bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">
+              Log in
+            </button>
+</div>
+</form>
+<div class="text-center">
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Don't have an account? <a class="font-medium text-primary hover:underline" href="mailto:admin@example.com">Contact your administrator</a></p>
+</div>
+</div>
+</main>
+<footer class="w-full py-6">
+<div class="container mx-auto px-6 text-center text-subtle-light dark:text-subtle-dark text-sm">
+<p>© 2025 Goal Mitr. All rights reserved.</p>
+</div>
+</footer>
+</div>
+
+</body></html>

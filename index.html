@@ -14,9 +14,9 @@
       theme: {
         extend: {
           colors: {
-            "primary": "#f9a406",
-            "background-light": "#f8f7f5",
-            "background-dark": "#231c0f",
+            "primary": "#FE9083",
+            "background-light": "#D5C2EF",
+            "background-dark": "white",
           },
           fontFamily: {
             "display": ["Inter"]
@@ -43,7 +43,7 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
 <div class="flex min-h-screen">
-<div class="hidden lg:block w-3/5 bg-center bg-cover" style="background-image: url('loginScreenbg.jpg');">
+<div class="hidden lg:block w-3/5 bg-center bg-cover" style="background-image: url('/loginScreenbg.jpg');">
 <div class="w-full h-full bg-slate-900/30"></div>
 </div>
 <div class="w-full lg:w-2/5 flex items-center justify-center p-8 lg:p-12 bg-[#978CB2]">
@@ -56,11 +56,11 @@
 <div class="space-y-4">
 <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-slate-100">Sign In</h2>
 <div class="flex flex-col space-y-4">
-<button onclick="location.href='EmployeeDashboard.html'" class="group flex items-center justify-center w-full bg-primary text-slate-900 dark:text-black font-bold py-3 px-4 rounded-full text-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
+<button onclick="location.href='EmployeeLogin.html'" class="group flex items-center justify-center w-full bg-primary text-slate-900 dark:text-black font-bold py-3 px-4 rounded-full text-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
 <span class="material-symbols-outlined mr-2">person</span>
                 Log in as Employee
               </button>
-<button onclick="location.href='ManagerDashboard.html'" class="group flex items-center justify-center w-full bg-primary/20 dark:bg-primary/30 text-slate-800 dark:text-slate-200 font-bold py-3 px-4 rounded-full text-lg hover:bg-primary/40 dark:hover:bg-primary/50 transition-all duration-300 transform hover:scale-105">
+<button onclick="location.href='ManagerLogin.html'" class="group flex items-center justify-center w-full bg-primary/20 dark:bg-primary/30 text-slate-800 dark:text-slate-200 font-bold py-3 px-4 rounded-full text-lg hover:bg-primary/40 dark:hover:bg-primary/50 transition-all duration-300 transform hover:scale-105">
 <span class="material-symbols-outlined mr-2">shield_person</span>
                 Log in as Manager
               </button>

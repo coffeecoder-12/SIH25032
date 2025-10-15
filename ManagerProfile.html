@@ -14,12 +14,12 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#f59e0b",
                         "primary-content": "#ffffff",
                         "primary-dark": "#d97706",
                         "primary-light": "#fcd34d",
-                        "background-light": "#fffbeb",
-                        "background-dark": "#1c1917",
+            "primary": "#FE9083",
+            "background-light": "#D5C2EF",
+            "background-dark": "white",
                         "text-light": "#1c1917",
                         "text-dark": "#f5f5f4",
                         "text-subtle-light": "#78716c",
@@ -52,46 +52,23 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
 <div class="flex flex-col min-h-screen">
-<header class="bg-white dark:bg-background-dark border-b border-border-light dark:border-border-dark shadow-sm">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex items-center justify-between h-16">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary text-3xl">emoji_events</span>
-<h1 class="text-xl font-bold text-primary">Goal Mitr</h1>
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">Goal Mitr</h1>
 </div>
-<nav class="hidden md:flex items-center gap-6">
-<a class="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary-light/30 dark:bg-primary-dark/30 text-primary font-bold" href="#">
-<span class="material-symbols-outlined">person</span>
-<span>My Profile</span>
-</a>
-<a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-primary-light/20 dark:hover:bg-primary-dark/20 transition-colors" href="#">
-<span class="material-symbols-outlined">groups</span>
-<span>Team Goals</span>
-</a>
-<a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-primary-light/20 dark:hover:bg-primary-dark/20 transition-colors" href="#">
-<span class="material-symbols-outlined">assessment</span>
-<span>Performance</span>
-</a>
-<a class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-primary-light/20 dark:hover:bg-primary-dark/20 transition-colors" href="#">
-<span class="material-symbols-outlined">folder</span>
-<span>Resources</span>
-</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="ManagerDashboard.html">Dashboard</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="ProjectInsight.html">Projects</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="StrategicResourceAllocation.html">Strategic Resource Allocation</a>
 </nav>
-<div class="flex items-center gap-4">
-<button class="md:hidden p-2 rounded-md text-text-subtle-light dark:text-text-subtle-dark hover:bg-gray-100 dark:hover:bg-gray-800">
-<span class="material-symbols-outlined">menu</span>
-</button>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAK8ohzi4PkSMfPnVBkAoxLy4QItuwqqOiUYIgWRINMmhW6G42kyg4Fl7BYt3GdNiQrV8se_lnZ2Dv6uVlgawyz5z0fZQihW7DiTD8aPNFmw8uJ-wZp0oR9tuP4rq1wdnfdAegBI2IGbrVlBiBYPtRJID6KhG_O5jTsOjgrferCvPy6dhKIQRIftli8OwJ7TOBFf3Gfj-TRjNpD5owk5yZfpdZHxG5d6vO6lO2vpBgityEAjhoQNR3gQpf4mPa0wJhsyZ1HdUyq52wd");'></div>
-<div class="hidden sm:block">
-<p class="font-bold text-sm">Sarah Miller</p>
-<p class="text-xs text-text-subtle-light dark:text-text-subtle-dark">Manager</p>
-</div>
-</div>
-<a class="hidden md:flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-primary-light/20 dark:hover:bg-primary-dark/20 transition-colors" href="">
-<span class="material-symbols-outlined">logout</span>
-<span>Sign Out</span>
-</a>
+<div class="flex items-center">
+<div onclick="location.href='ManagerProfile.html'" class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmY-HoJLu4xMRihtb0CZIcS3Y76Uneubl0mqgX03QVLgIbmqGssCA5pTsz9Dltf_TqlunEWXmp-711_pkTW4hQKIMjTBT_DPmNkY85nwSq82qMM-kUbiJyNd1mXjZQBE31uy5yqV3GnhI43WsMctGnbhUzuN7jnKPDf4ny6JTAJL4zdb2s05MnVMjlOGLwaVAkC0Dvn6hwJVt1LsaVBVvVnNQ8ra1glUCLqoQIxQpsuDQBleRErt49ZqDDxcsEUb70ZXi8jFhir0g");'></div>
 </div>
 </div>
 </div>
